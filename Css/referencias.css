@@ -122,3 +122,25 @@ div:first-of-type button{
     border-top-left-radius:5px ;
     border-bottom-right-radius: 10px;
 }
+#mid div[id*="e"]{
+    background-color: rgb(255, 64, 61);
+    width: 90px;
+    height: 70px;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius: 8px;
+}
+#mix{
+    background-color: rgb(46, 46, 46);
+}
+div#mix ~div{
+    background-color: darkgoldenrod;
+    transform: rotate(60deg);
+}
+#son > div{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(66, 66, 255);
+}
+.mazo + .cube{
+    background-color: green;
+}
