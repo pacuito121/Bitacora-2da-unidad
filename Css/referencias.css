@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Datatype:wght@100..900&display=swap');
+body,html{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(201, 192, 192); */
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    padding: 5px;
+    text-align: center;
+}
+h1,strong,h2{
+    font-family: "Datatype",'Courier New', Courier, monospace;
+    margin: 5px;
+}
+#mains{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+button{
+    margin: 5px;
+    border: 0PX ;
+    border-left: 2px solid black ; 
+    border-right: 2px solid black ;
+    padding: 5px;
+    background-color: white;
+    width: 80px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: gold;
+}
+div:first-of-type button{
+    width: 100px;
+    font-size: 12px;
+}
+
+.show{
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+}
+
+.show *{
+    margin: 5px;
+}
+.info{
+    text-align: center;
+    font-size: 16px;
+}
+
+.cube,.cube2{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+#Not *:not(div[class="cube2"]){
+    border-radius: 10px;
+    border: 2px solid crimson;
+}
+
+#odd *:nth-child(odd){
+    background-color: rgb(38, 105, 164);
+    width: 70px;
+    height: 50px;
+}
+#even *:nth-child(even){
+    background-color: rgb(91, 164, 38);
+    width: 50px;
+    height: 60px;
+    border-radius: 20px;
+}
+#first div:first-child{
+    border: 3px solid rgb(64, 35, 196);
+    width: 80px;
+    height: 80px;
+}
+.sho div:only-child{
+    background-color: cadetblue;
+}
+#A{
+    border-color: crimson;
+}
+#B{
+    border-color: green;
+}
+
+#last div:last-child{
+    background-color: coral;
+}
+#nth div:nth-child(5){
+    transform: rotate(50deg);
+    background-color: crimson;
+}
+#init div[id^="c"]{
+    background-color: darkcyan;
+    width: 70px;
+    height: 70px;
+    border-top-left-radius:5px ;
+}
+#finit div[id$="o"]{
+    background-color: rgb(120, 78, 18);
+    width: 70px;
+    height: 70px;
+    border-top-left-radius:5px ;
+    border-bottom-right-radius: 10px;
+}

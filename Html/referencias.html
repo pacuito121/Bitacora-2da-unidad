@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/referencias.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Referencias avanzadas</h1>
+    </header>
+    <nav style="display: flex;justify-content: center;">
+        <div style="display: flex;">
+            <button onclick="location.href = 'input.html'">Form Input</button>
+            <button onclick="location.href = 'referencias.html'">Referencias avanzadas</button>
+            <button onclick="location.href = 'extras.html'">Extras</button>
+            <button onclick="location.href = '../index.html'">Index</button>
+            <button onclick="location.href = 'position.html'">Position</button>
+            <button onclick="location.href = 'display.html'">Display</button>
+            <button onclick="location.href = 'tablas.html'">Tablas</button>
+        </div>
+    </nav>
+    <main>
+            <section id="mains">
+                <article class="info">
+                    <h3 align="center">Not - #Not *:not(div[class="cube2"])</h3>
+                    <div class="show" id="Not">
+                        <div class="cube">Cubo</div>
+                        <div class="cube">Cubo</div>
+                        <div class="cube2">Cubo 2</div>
+                        <div class="cube">Cubo</div>
+                        <div class="cube">Cubo</div>
+                    </div>
+                    <div class="info">
+                        <strong>Funciona como una excepción a la regla. Aplica los estilos a todos los elementos, excepto a aquellos que cumplan con la condición que se especifique entre los paréntesis.</strong>
+                    </div>
+                </article>
+                <h2>Pseudo-clases de paridad</h2>
+                <article class="info">
+                    <h3 align="center">Even - #even *:nth-child(even)</h3>
+                    <div class="show" id="even">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="info">
+                        <strong>Selecciona automáticamente todos los elementos que se encuentran en posiciones impares (1, 3, 5, etc.) dentro de una lista o tabla.</strong>
+                    </div>
+                </article>
+                <article class="info">
+                    <h3 align="center">Odd - #odd *:nth-child(odd)</h3>
+                    <div class="show" id="odd">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="info">
+                        <strong>Selecciona automáticamente todos los elementos que se encuentran en posiciones pares (2, 4, 6, etc.), ideal para crear tablas con colores de fila alternados.</strong>
+                    </div>
+                </article>
+                <h2>Pseudo-clases de posición</h2>
+                <article class="info">
+                    <h3 align="center">First - Child - #first div:first-child</h3>
+                    <div class="show" id="first">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="info">
+                        <strong>Selecciona y da estilo únicamente al primer elemento hijo que se encuentra dentro de su contenedor padre.</strong>
+                    </div>
+                </article>
+                <article class="info">
+                    <h3 align="center">Only - Child .sho div:only-child</h3>
+                    <div class="show" id="only">
+                        <div class="show sho" id="A">
+                            <div class="cube"></div>
+                            <div class="cube"></div>
+                            <div class="cube"></div>
+                            <div class="cube"></div>
+                            <div class="cube"></div>
+                        </div>
+                        <div class="show sho" id="B">
+                            <div class="cube"></div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <strong>Aplica el estilo a un elemento siempre y cuando sea el único hijo disponible dentro de su contenedor padre (es decir, que no tenga hermanos).</strong>
+                    </div>
+                </article>
+                <article class="info">
+                    <h3 align="center">Last - Child - #last div:last-child</h3>
+                    <div class="show" id="last">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="info">
+                        <strong>Selecciona y da estilo únicamente al último elemento hijo que se encuentra dentro de su contenedor padre.</strong>
+                    </div>
+                </article>    
+                <article class="info">
+                    <h3 align="center">Nth - Child - #nth div:nth-child(5)</h3>
+                    <div class="show" id="nth">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="info">Permite buscar y seleccionar un elemento específico basándose en su posición numérica exacta dentro de su contenedor (por ejemplo, el hijo número 2 o número 5).</div>
+                </article>
+                <h2>Selectores de atributo</h2>
+                <article class="info">
+                    <h3 align="center">^= - #init div[id^="c"]</h3>
+                    <div class="show" id="init">
+                        <div class="cube" id="uno">#uno</div>
+                        <div class="cube" id="dos">#dos</div>
+                        <div class="cube" id="tres">#tres</div>
+                        <div class="cube" id="cuatro">#cuatro</div>
+                        <div class="cube" id="cinco">#cinco</div>
+                        <div class="cube" id="seis">#seis</div>
+                        <div class="cube" id="siete">#siete</div>
+                        <div class="cube" id="ocho">#ocho</div>
+                        <div class="cube" id="nueve">#nueve</div>
+                        <div class="cube" id="diez">#diez</div>
+                    </div>
+                    <div class="info">
+                        <strong>Selecciona elementos cuyo valor de atributo (como un id o class) comienza exactamente con una cadena de texto específica.</strong>
+                    </div>
+                </article>
+                <article class="info">
+                    <h3 align="center">*=</h3>
+                    <div class="show" id="mid">
+                        <div class="cube" id="uno">#uno</div>
+                        <div class="cube" id="dos">#dos</div>
+                        <div class="cube" id="tres">#tres</div>
+                        <div class="cube" id="cuatro">#cuatro</div>
+                        <div class="cube" id="cinco">#cinco</div>
+                        <div class="cube" id="seis">#seis</div>
+                        <div class="cube" id="siete">#siete</div>
+                        <div class="cube" id="ocho">#ocho</div>
+                        <div class="cube" id="nueve">#nueve</div>
+                        <div class="cube" id="diez">#diez</div>
+                    </div>
+                    <div class="info">
+                        <strong>Selecciona elementos cuyo valor de atributo incluye una cadena de texto específica en cualquier parte, sin importar si está al inicio, en medio o al final.</strong>
+                    </div>
+                </article>
+                <article class="info">
+                    <h3 align="center">$= - - #finit div[id*="o"]</h3>
+                    <div class="show" id="finit">
+                        <div class="cube" id="uno">#uno</div>
+                        <div class="cube" id="dos">#dos</div>
+                        <div class="cube" id="tres">#tres</div>
+                        <div class="cube" id="cuatro">#cuatro</div>
+                        <div class="cube" id="cinco">#cinco</div>
+                        <div class="cube" id="seis">#seis</div>
+                        <div class="cube" id="siete">#siete</div>
+                        <div class="cube" id="ocho">#ocho</div>
+                        <div class="cube" id="nueve">#nueve</div>
+                        <div class="cube" id="diez">#diez</div>
+                    </div>
+                    <div class="info"><strong>Selecciona elementos cuyo valor de atributo termina exactamente con una cadena de texto específica.</strong></div>
+                </article>
+                <article class="info">
+                    <h3 align="center">~</h3>
+                    <div class="show" id="bro">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="info">
+                        <strong>Aplica estilos a todos los elementos hermanos que se encuentran en el código después de un elemento específico, siempre y cuando compartan el mismo contenedor padre.</strong>
+                    </div>
+                </article>
+                <article class="info">
+                    <h3 align="center">></h3>
+                    <div class="show" id="son">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="info">
+                        <strong>Selecciona y aplica estilos únicamente a los elementos que son descendientes de primer nivel (hijos directos) de un contenedor. A diferencia del selector de espacio tradicional, este ignora a los elementos que están anidados más profundo (los "nietos").</strong>
+                    </div>
+                </article>
+                <article class="info">
+                    <h3 align="center">+</h3>
+                    <div class="show" id="neighbor">'
+                        <div class="cube"></div>
+                        <div class="cube3"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube3"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube3"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="info">
+                        <strong>Selecciona el elemento que se encuentra inmediatamente después (el vecino directo) de otro elemento especificado en el código HTML, siempre y cuando ambos compartan el mismo contenedor padre.</strong>
+                    </div>
+                </article>
+            </section>  
+    </main>
+    <footer>
+        <strong>Hecho por Gabriel Treviño 248127</strong>
+    </footer>
+    <script src="Js/index.js"></script>
+</body>
+</html>

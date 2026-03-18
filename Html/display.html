@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/display.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Display</h1>
+    </header>
+    <nav style="display: flex;justify-content: center;">
+        <div style="display: flex;">
+            <button onclick="location.href = 'input.html'">Form Input</button>
+            <button onclick="location.href = 'referencias.html'">Referencias avanzadas</button>
+            <button onclick="location.href = 'extras.html'">Extras</button>
+            <button onclick="location.href = '../index.html'">Index</button>
+            <button onclick="location.href = 'position.html'">Position</button>
+            <button onclick="location.href = 'display.html'">Display</button>
+            <button onclick="location.href = 'tablas.html'">Tablas</button>
+        </div>
+    </nav>
+    <main>   
+        <h2 id="set">Block</h2>
+        <section id="mains">
+            <div class="Cub" style="background-color: green;"></div>
+            <div class="Cub" style="background-color: rgb(205, 137, 74);"></div>
+            <div class="Cub" style="background-color: rgb(0, 66, 128);"></div>
+            <div class="Cub" style="background-color: rgb(182, 48, 142);"></div>
+            <div class="Cub" style="background-color: rgb(83, 0, 128);"></div>
+        </section>
+        <section id="menu">
+            <button class="dops" onclick="dis(1)">Inline</button>
+            <button class="dops" onclick="dis(2)">Block</button>
+            <button class="dops" onclick="dis(3)">Inline block</button>
+            <button class="dops" onclick="dis(4)">Flex</button>
+            <button class="dops" onclick="dis(5)">Inline-Flex</button>
+            <button class="dops" onclick="dis(6)">Grid</button>
+            <button class="dops" onclick="dis(7)">Inline-Grid</button>
+            <button class="dops" onclick="dis(8)">List-item</button>
+            <button class="dops" onclick="dis(9)">Table</button>
+            <button class="dops" onclick="dis(10)">Table-cell</button>
+            <button class="dops" onclick="dis(11)">Table-Row</button>
+            <button class="dops" onclick="dis(12)">Contents</button>
+            <button class="dops" onclick="dis(13)">None</button>
+        </section>
+    </main>
+    <footer>
+        <strong>Hecho por Gabriel Treviño 248127</strong>
+    </footer>
+    <script src="../Js/display.js"></script>
+</body>
+</html>

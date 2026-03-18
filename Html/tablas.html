@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/tablas.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Tablas</h1>
+    </header>
+    <nav style="display: flex;justify-content: center;">
+        <div style="display: flex;">
+            <button onclick="location.href = 'input.html'">Form Input</button>
+            <button onclick="location.href = 'referencias.html'">Referencias avanzadas</button>
+            <button onclick="location.href = 'extras.html'">Extras</button>
+            <button onclick="location.href = '../index.html'">Index</button>
+            <button onclick="location.href = 'position.html'">Position</button>
+            <button onclick="location.href = 'display.html'">Display</button>
+            <button onclick="location.href = 'tablas.html'">Tablas</button>
+        </div>
+    </nav>
+    <main>
+        <section id="mains">
+           <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2"> ID</th>
+                        <th colspan="3">Cabeza de la tabla - Thead</th>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Hora de ingreso</th>
+                    </tr>
+                </thead>
+                <tbody id="boxs">
+                    <tr>
+                        <td colspan="4">Cuerpo de la tabla - TBody</td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">Ejemplo de tablas Html - TFoot</th>
+                    </tr>
+                </tfoot>
+            </table> 
+        </section>
+        <section id="menu">
+            <label for="Nombre">Nombre: </label>
+            <input type="text" name="Nombre" id="Nombre">
+            <label for="Edad">Edad: </label>
+            <input type="number" name="Edad" id="Edad" min="0" value="0">
+            <button id="send" onclick="add()">Registrar</button>
+        </section>
+    </main>
+    <footer>
+        <strong>Hecho por Gabriel Treviño 248127</strong>
+    </footer>
+    <script src="../Js/tablas.js"></script>
+</body>
+</html>

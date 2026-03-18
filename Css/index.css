@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Datatype:wght@100..900&display=swap');
+body,html{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(201, 192, 192); */
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    padding: 5px;
+    text-align: center;
+}
+h1,strong{
+    font-family: "Datatype",'Courier New', Courier, monospace;
+    margin: 5px;
+}
+#mains{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.opx{
+    background-color: cornflowerblue;
+    padding: 5px;
+    height: 40px;
+    width: 120px;
+    font-size: 12px;
+    border: 2px solid black outset;
+    cursor: pointer;
+    margin: 4px;
+    transition: 0.2s;
+}
+.opx:hover{
+    border-style: inset;
+    background-color: teal;
+}
+#photo{
+    height: 300px;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

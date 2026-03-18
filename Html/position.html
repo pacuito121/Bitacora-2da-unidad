@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/position.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Position</h1>
+    </header>
+    <nav style="display: flex;justify-content: center;">
+        <div style="display: flex;">
+            <button onclick="location.href = 'input.html'">Form Input</button>
+            <button onclick="location.href = 'referencias.html'">Referencias avanzadas</button>
+            <button onclick="location.href = 'extras.html'">Extras</button>
+            <button onclick="location.href = '../index.html'">Index</button>
+            <button onclick="location.href = 'position.html'">Position</button>
+            <button onclick="location.href = 'display.html'">Display</button>
+            <button onclick="location.href = 'tablas.html'">Tablas</button>
+        </div>
+    </nav>
+    <main>
+        <h2 id="title">Static</h2>
+        <section id="mains">
+            <div id="cube"></div>
+        </section>
+        <section style="display: flex;align-items: center;">
+            <Legend>X: </Legend>
+            <input type="number" value="0" min="0" name="x" id="x" placeholder="x%">
+            <legend>Y: </legend>
+            <input type="number" value="0" min="0" name="y" id="y" placeholder="y%">
+            <button id="chck" onclick="XY()">Check</button>
+        </section>
+        <section id="menu">
+            <button class="dops" onclick="dis(1)">Static</button>
+            <button class="dops" onclick="dis(2)">Relative</button>
+            <button class="dops" onclick="dis(3)">Absolute</button>
+            <button class="dops" onclick="dis(4)">Fixed</button>
+            <button class="dops" onclick="dis(5)">Sticky</button>
+        </section>
+    </main>
+    <footer>
+        <strong>Hecho por Gabriel Treviño 248127</strong>
+    </footer>
+    <script src="../Js/position.js"></script>
+</body>
+</html>

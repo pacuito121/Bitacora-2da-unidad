@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/input.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Css Input</h1>
+    </header>
+    <nav style="display: flex;justify-content: center;">
+        <div style="display: flex;">
+            <button onclick="location.href = 'input.html'">Form Input</button>
+            <button onclick="location.href = 'referencias.html'">Referencias avanzadas</button>
+            <button onclick="location.href = 'extras.html'">Extras</button>
+            <button onclick="location.href = '../index.html'">Index</button>
+            <button onclick="location.href = 'position.html'">Position</button>
+            <button onclick="location.href = 'display.html'">Display</button>
+            <button onclick="location.href = 'tablas.html'">Tablas</button>
+        </div>
+    </nav>
+    <main>  
+        <section id="fix">
+            <form id="mains" action="input.html">
+                <label for="Name">Ingresa tu nombre: </label>
+                <input type="text" name="Name" id="Name" autocomplete="bday" required>
+                <label for="Pass">Ingresa la contraseña o paga mil pavos por la respuesta completa $1540: </label>
+                <input type="password" name="Pass" id="Pass" required>
+                <label for="email">Ingresa tu correo: </label>
+                <input type="email" name="email" id="email" autocomplete="additional-name" required>
+                <label for="Num">Ingresa tu edad: </label>
+                <input type="number" name="Num" id="Num" required>
+                <label for="Check">Eres feliz?</label>
+                <input type="checkbox" name="Check" id="Check">
+                <div>
+                    <label for="Opt1">Mujer</label>
+                    <input type="radio" name="Opt" id="Opt1" value="Mujer" required>
+                    <label for="Opt2">Hombre</label>
+                    <input type="radio" name="Opt" id="Opt2" value="Hombre" required>
+                    <label for="Opt3">Que te importa chismoso</label> 
+                    <input type="radio" name="Opt" id="Opt3" value="Que te importa chismoso" required>
+                </div>
+                <label for="Range">Ingresa que tan animado te sientes: </label>
+                <input type="range" name="Range" id="Range" step="2" required>
+                <input type="submit" value="Submit">
+            </form>
+            <textarea name="Msg" id="Msg" disabled>
+
+            </textarea>
+        </section>
+    </main>
+    <footer>
+        <strong>Hecho por Gabriel Treviño 248127</strong>
+    </footer>
+    <script src="../Js/input.js"></script>
+</body>
+</html>
